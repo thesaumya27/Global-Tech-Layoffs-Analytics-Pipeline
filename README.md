@@ -26,19 +26,19 @@ A new staging table layoffs_staging2 was created to store cleaned data without d
 #### 3. Standardize Data
 Several inconsistencies in the dataset were addressed:
 
-Trim and Format Company Names: Removed extra spaces and ensured uniform naming conventions.
+**Trim and Format Company Names**: Removed extra spaces and ensured uniform naming conventions.
 
-Industry Standardization: Standardized similar categories (e.g., "Crypto" and "Crypto startups" → "Crypto").
+**Industry Standardization**: Standardized similar categories (e.g., "Crypto" and "Crypto startups" → "Crypto").
 
-Country Formatting: Fixed inconsistent country names (e.g., "United States." → "United States").
+**Country Formatting**: Fixed inconsistent country names (e.g., "United States." → "United States").
 
-Date Format: Converted string dates to proper DATE format using STR_TO_DATE() and modified the column data type.
+**Date Format**: Converted string dates to proper DATE format using STR_TO_DATE() and modified the column data type.
 #### 4. Handle Missing Values
 To address missing or incomplete data:
 
-Industry Completion: Filled missing industry values by cross-referencing rows with the same company and location.
+**Industry Completion**: Filled missing industry values by cross-referencing rows with the same company and location.
 
-Elimination of Null Rows: Removed rows where total_laid_off and percentage_laid_off were both null, as these were deemed uninformative.
+**Elimination of Null Rows**: Removed rows where total_laid_off and percentage_laid_off were both null, as these were deemed uninformative.
 #### 5. Remove Irrelevant Data
 Unnecessary columns and rows were removed to simplify analysis:
 
