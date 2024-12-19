@@ -56,4 +56,3 @@ STR_TO_DATE() for date formatting.
 
 CTEs and joins for missing value imputation.
 
-### Dataset: Layoffs Dataset (Kaggle)
